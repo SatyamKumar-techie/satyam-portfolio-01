@@ -346,8 +346,9 @@ function Portfolio() {
               <span suppressHydrationWarning>satyamdark123@gmail.com</span>
             </a>
             <a
-              href={SOCIAL.linkedin}
-              target="_top"
+              href="https://www.linkedin.com/in/satyam-kumar-techie/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-md border border-border bg-background/60 px-5 py-2.5 text-sm font-medium hover:bg-background transition"
             >
               <Linkedin className="h-4 w-4" /> LinkedIn
