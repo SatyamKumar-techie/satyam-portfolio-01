@@ -87,10 +87,9 @@ function Portfolio() {
       {/* Nav */}
       <header className="sticky top-0 z-40 backdrop-blur-xl bg-background/70 border-b border-border/60">
         <div className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
-          <a href="#top" className="font-mono text-sm flex items-center gap-2">
-            <span className="text-primary">$</span>
-            <span className="font-semibold">satyam</span>
-            <span className="text-muted-foreground">~/portfolio</span>
+          <a href="#top" className="font-mono text-base flex items-baseline gap-0.5">
+            <span className="font-bold tracking-tight bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">SK</span>
+            <span className="text-muted-foreground">.devops</span>
           </a>
           <nav className="hidden md:flex items-center gap-7 text-sm text-muted-foreground">
             <a href="#focus" className="hover:text-foreground transition">Focus</a>
