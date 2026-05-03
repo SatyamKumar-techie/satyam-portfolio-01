@@ -1,11 +1,24 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
-  Cloud, Container, GitBranch, Server, Workflow, Terminal,
-  Mail, Linkedin, Github, Twitter, MapPin, ArrowUpRight,
-  Activity, BarChart3, Code2, Rocket, ChevronRight,
+  Cloud,
+  Container,
+  GitBranch,
+  Server,
+  Workflow,
+  Terminal,
+  Mail,
+  Linkedin,
+  Github,
+  Twitter,
+  MapPin,
+  ArrowUpRight,
+  Activity,
+  BarChart3,
+  Code2,
+  Rocket,
+  ChevronRight,
 } from "lucide-react";
 import type { MouseEvent } from "react";
-
 
 const SOCIAL = {
   github: "https://github.com/SatyamKumar-techie",
@@ -39,19 +52,52 @@ export const Route = createFileRoute("/")({
 });
 
 const skills = {
-  "DevOps & Cloud": ["Docker", "Kubernetes", "AWS", "Terraform", "Jenkins", "GitLab", "ArgoCD", "Ansible"],
+  "DevOps & Cloud": [
+    "Docker",
+    "Kubernetes",
+    "AWS",
+    "Terraform",
+    "Jenkins",
+    "GitLab",
+    "ArgoCD",
+    "Ansible",
+  ],
   "Monitoring & Observability": ["Prometheus", "Grafana"],
-  "Programming": ["C", "C++", "DSA", "Problem Solving"],
+  Programming: ["C", "C++", "DSA", "Problem Solving"],
   "Environment & Tools": ["Linux", "Ubuntu", "Git", "GitHub"],
 };
 
 const focusAreas = [
-  { icon: Container, title: "Kubernetes & Container Orchestration", desc: "Designing resilient cluster workloads with Helm, ArgoCD and rolling deployments." },
-  { icon: Cloud, title: "Cloud Infrastructure (AWS)", desc: "EC2, VPC, S3, IAM and cost-aware architectures for production workloads." },
-  { icon: Workflow, title: "CI/CD Pipeline Engineering", desc: "End-to-end automation with Jenkins & GitLab CI — build, test, scan, deploy." },
-  { icon: Server, title: "Infrastructure as Code", desc: "Reproducible environments with Terraform modules and Ansible playbooks." },
-  { icon: BarChart3, title: "Monitoring & Observability", desc: "Prometheus metrics, Grafana dashboards and actionable alerting." },
-  { icon: Code2, title: "System Design & Fundamentals", desc: "Strong foundations in DSA, problem solving and scalable architecture." },
+  {
+    icon: Container,
+    title: "Kubernetes & Container Orchestration",
+    desc: "Designing resilient cluster workloads with Helm, ArgoCD and rolling deployments.",
+  },
+  {
+    icon: Cloud,
+    title: "Cloud Infrastructure (AWS)",
+    desc: "EC2, VPC, S3, IAM and cost-aware architectures for production workloads.",
+  },
+  {
+    icon: Workflow,
+    title: "CI/CD Pipeline Engineering",
+    desc: "End-to-end automation with Jenkins & GitLab CI — build, test, scan, deploy.",
+  },
+  {
+    icon: Server,
+    title: "Infrastructure as Code",
+    desc: "Reproducible environments with Terraform modules and Ansible playbooks.",
+  },
+  {
+    icon: BarChart3,
+    title: "Monitoring & Observability",
+    desc: "Prometheus metrics, Grafana dashboards and actionable alerting.",
+  },
+  {
+    icon: Code2,
+    title: "System Design & Fundamentals",
+    desc: "Strong foundations in DSA, problem solving and scalable architecture.",
+  },
 ];
 
 const projects = [
@@ -94,14 +140,24 @@ function Portfolio() {
       <header className="sticky top-0 z-40 backdrop-blur-xl bg-background/70 border-b border-border/60">
         <div className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
           <a href="#top" className="font-mono text-base flex items-baseline gap-0.5">
-            <span className="font-bold tracking-tight bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">SK</span>
+            <span className="font-bold tracking-tight bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              SK
+            </span>
             <span className="text-muted-foreground">.devops</span>
           </a>
           <nav className="hidden md:flex items-center gap-7 text-sm text-muted-foreground">
-            <a href="#focus" className="hover:text-foreground transition">Focus</a>
-            <a href="#stack" className="hover:text-foreground transition">Stack</a>
-            <a href="#projects" className="hover:text-foreground transition">Projects</a>
-            <a href="#contact" className="hover:text-foreground transition">Contact</a>
+            <a href="#focus" className="hover:text-foreground transition">
+              Focus
+            </a>
+            <a href="#stack" className="hover:text-foreground transition">
+              Stack
+            </a>
+            <a href="#projects" className="hover:text-foreground transition">
+              Projects
+            </a>
+            <a href="#contact" className="hover:text-foreground transition">
+              Contact
+            </a>
           </nav>
           <a
             href="mailto:satyamdark123@gmail.com"
@@ -126,13 +182,11 @@ function Portfolio() {
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.05]">
             Satyam Kumar
           </h1>
-          <p className="mt-4 text-2xl md:text-3xl font-mono text-primary">
-            Design. Deploy. Scale.
-          </p>
+          <p className="mt-4 text-2xl md:text-3xl font-mono text-primary">Design. Deploy. Scale.</p>
           <p className="mt-6 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-            DevOps enthusiast focused on building reliable, scalable, and automated
-            systems. I work with cloud platforms, containerized environments and
-            CI/CD pipelines to ship ideas into production-ready deployments.
+            DevOps enthusiast focused on building reliable, scalable, and automated systems. I work
+            with cloud platforms, containerized environments and CI/CD pipelines to ship ideas into
+            production-ready deployments.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-3">
@@ -151,8 +205,14 @@ function Portfolio() {
           </div>
 
           <div className="mt-12 flex flex-wrap items-center gap-6 text-sm text-muted-foreground">
-            <span className="inline-flex items-center gap-2"><MapPin className="h-4 w-4" /><span>India · UTC +05:30</span></span>
-            <span className="inline-flex items-center gap-2"><Mail className="h-4 w-4" /><span>satyamdark123@gmail.com</span></span>
+            <span className="inline-flex items-center gap-2">
+              <MapPin className="h-4 w-4" />
+              <span>India · UTC +05:30</span>
+            </span>
+            <span className="inline-flex items-center gap-2">
+              <Mail className="h-4 w-4" />
+              <span>satyamdark123@gmail.com</span>
+            </span>
           </div>
         </div>
       </section>
@@ -233,7 +293,10 @@ function Portfolio() {
               <p className="mt-4 text-sm text-muted-foreground leading-relaxed flex-1">{p.desc}</p>
               <div className="mt-5 flex flex-wrap gap-2">
                 {p.stack.map((s) => (
-                  <span key={s} className="text-[11px] font-mono text-muted-foreground border border-border rounded px-2 py-0.5">
+                  <span
+                    key={s}
+                    className="text-[11px] font-mono text-muted-foreground border border-border rounded px-2 py-0.5"
+                  >
                     {s}
                   </span>
                 ))}
@@ -253,7 +316,10 @@ function Portfolio() {
             "Automate infrastructure using Terraform",
             "Strengthen system design & problem solving",
           ].map((g) => (
-            <li key={g} className="flex items-start gap-3 rounded-lg border border-border bg-card p-4">
+            <li
+              key={g}
+              className="flex items-start gap-3 rounded-lg border border-border bg-card p-4"
+            >
               <ChevronRight className="h-5 w-5 text-primary shrink-0 mt-0.5" />
               <span className="text-sm">{g}</span>
             </li>
@@ -264,26 +330,50 @@ function Portfolio() {
       {/* Contact */}
       <section id="contact" className="mx-auto max-w-6xl px-6 py-24 border-t border-border/60">
         <div className="rounded-2xl border border-border bg-card p-10 md:p-14 text-center relative overflow-hidden">
-          <div className="absolute inset-0 -z-10 opacity-60" style={{ backgroundImage: "var(--gradient-hero)" }} />
+          <div
+            className="absolute inset-0 -z-10 opacity-60"
+            style={{ backgroundImage: "var(--gradient-hero)" }}
+          />
           <Activity className="h-8 w-8 text-primary mx-auto" />
           <h2 className="mt-4 text-3xl md:text-4xl font-bold tracking-tight">
             Let's build something reliable.
           </h2>
           <p className="mt-3 text-muted-foreground max-w-xl mx-auto">
-            Open to DevOps, Cloud and SRE internship opportunities. Let's talk
-            pipelines, clusters and clean infrastructure.
+            Open to DevOps, Cloud and SRE internship opportunities. Let's talk pipelines, clusters
+            and clean infrastructure.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <a href={SOCIAL.email} className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition shadow-[var(--shadow-glow)]" suppressHydrationWarning>
-              <Mail className="h-4 w-4" /> <span suppressHydrationWarning>satyamdark123@gmail.com</span>
+            <a
+              href={SOCIAL.email}
+              className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition shadow-[var(--shadow-glow)]"
+              suppressHydrationWarning
+            >
+              <Mail className="h-4 w-4" />{" "}
+              <span suppressHydrationWarning>satyamdark123@gmail.com</span>
             </a>
-            <a href={SOCIAL.linkedin} target="_blank" rel="noopener noreferrer" onClick={(event) => openExternal(event, SOCIAL.linkedin)} className="inline-flex items-center gap-2 rounded-md border border-border bg-background/60 px-5 py-2.5 text-sm font-medium hover:bg-background transition">
+            <a
+              href={SOCIAL.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(event) => openExternal(event, SOCIAL.linkedin)}
+              className="inline-flex items-center gap-2 rounded-md border border-border bg-background/60 px-5 py-2.5 text-sm font-medium hover:bg-background transition"
+            >
               <Linkedin className="h-4 w-4" /> LinkedIn
             </a>
-            <a href={SOCIAL.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-md border border-border bg-background/60 px-5 py-2.5 text-sm font-medium hover:bg-background transition">
+            <a
+              href={SOCIAL.github}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-md border border-border bg-background/60 px-5 py-2.5 text-sm font-medium hover:bg-background transition"
+            >
               <Github className="h-4 w-4" /> GitHub
             </a>
-            <a href={SOCIAL.twitter} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-md border border-border bg-background/60 px-5 py-2.5 text-sm font-medium hover:bg-background transition">
+            <a
+              href={SOCIAL.twitter}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-md border border-border bg-background/60 px-5 py-2.5 text-sm font-medium hover:bg-background transition"
+            >
               <Twitter className="h-4 w-4" /> Twitter
             </a>
           </div>
