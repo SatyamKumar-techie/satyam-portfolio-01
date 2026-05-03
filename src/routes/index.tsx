@@ -4,6 +4,7 @@ import {
   Mail, Linkedin, Github, Twitter, MapPin, ArrowUpRight,
   Activity, BarChart3, Code2, Rocket, ChevronRight,
 } from "lucide-react";
+import type { MouseEvent } from "react";
 
 
 const SOCIAL = {
@@ -12,6 +13,11 @@ const SOCIAL = {
   twitter: "https://x.com/SatyamKr001",
   email: "mailto:satyamdark123@gmail.com",
 };
+
+function openExternal(event: MouseEvent<HTMLAnchorElement>, url: string) {
+  event.preventDefault();
+  window.open(url, "_blank", "noopener,noreferrer");
+}
 
 export const Route = createFileRoute("/")({
   component: Portfolio,
@@ -268,10 +274,10 @@ function Portfolio() {
             pipelines, clusters and clean infrastructure.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <a href={SOCIAL.email} className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition shadow-[var(--shadow-glow)]">
-              <Mail className="h-4 w-4" /> satyamdark123@gmail.com
+            <a href={SOCIAL.email} className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition shadow-[var(--shadow-glow)]" suppressHydrationWarning>
+              <Mail className="h-4 w-4" /> <span suppressHydrationWarning>satyamdark123@gmail.com</span>
             </a>
-            <a href={SOCIAL.linkedin} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-md border border-border bg-background/60 px-5 py-2.5 text-sm font-medium hover:bg-background transition">
+            <a href={SOCIAL.linkedin} target="_blank" rel="noopener noreferrer" onClick={(event) => openExternal(event, SOCIAL.linkedin)} className="inline-flex items-center gap-2 rounded-md border border-border bg-background/60 px-5 py-2.5 text-sm font-medium hover:bg-background transition">
               <Linkedin className="h-4 w-4" /> LinkedIn
             </a>
             <a href={SOCIAL.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-md border border-border bg-background/60 px-5 py-2.5 text-sm font-medium hover:bg-background transition">
