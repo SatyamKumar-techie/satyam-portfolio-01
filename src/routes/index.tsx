@@ -48,15 +48,27 @@ const projects = [
     href: "https://github.com/SatyamKumar-techie",
   },
   {
-    name: "kubestarter",
-    desc: "Curated starter kit and reference workloads to bootstrap real-world Kubernetes clusters.",
-    stack: ["Kubernetes", "Shell", "YAML"],
+    name: "Containerized Application Deployment",
+    desc: "Dockerized multi-service apps deployed on Kubernetes with health checks, rolling updates and resource limits.",
+    stack: ["Docker", "Kubernetes", "Helm"],
     href: "https://github.com/SatyamKumar-techie",
   },
   {
-    name: "90DaysOfDevOps",
-    desc: "Public learning journey covering Linux, Docker, K8s, Terraform, Jenkins and observability.",
-    stack: ["DevOps", "Python", "Docs"],
+    name: "CI/CD Automation",
+    desc: "Automated build, test and deploy pipelines using Jenkins and GitLab CI with image scanning and approvals.",
+    stack: ["Jenkins", "GitLab CI", "Docker"],
+    href: "https://github.com/SatyamKumar-techie",
+  },
+  {
+    name: "AWS Infrastructure Setup",
+    desc: "Provisioning VPC, EC2, IAM and S3 with Terraform — reproducible, cost-aware cloud foundations.",
+    stack: ["AWS", "Terraform", "IAM"],
+    href: "https://github.com/SatyamKumar-techie",
+  },
+  {
+    name: "Kubernetes Cluster Configuration",
+    desc: "Bootstrapping production-ready clusters with networking, RBAC, ingress and observability stack.",
+    stack: ["Kubernetes", "Prometheus", "Grafana"],
     href: "https://github.com/SatyamKumar-techie",
   },
 ];
@@ -134,9 +146,9 @@ function Portfolio() {
           </div>
 
           <div className="mt-12 flex flex-wrap items-center gap-6 text-sm text-muted-foreground">
-            <span className="inline-flex items-center gap-2"><MapPin className="h-4 w-4" /> India · UTC +05:30</span>
-            <span className="inline-flex items-center gap-2"><Mail className="h-4 w-4" /> satyamdark123@gmail.com</span>
-            <span className="inline-flex items-center gap-2"><Twitter className="h-4 w-4" /> @SatyamKr001</span>
+            <span className="inline-flex items-center gap-2"><MapPin className="h-4 w-4" /><span>India · UTC +05:30</span></span>
+            <span className="inline-flex items-center gap-2"><Mail className="h-4 w-4" /><span>satyamdark123@gmail.com</span></span>
+            <span className="inline-flex items-center gap-2"><Twitter className="h-4 w-4" /><span>@SatyamKr001</span></span>
           </div>
         </div>
       </section>
