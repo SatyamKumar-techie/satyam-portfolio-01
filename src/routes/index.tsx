@@ -18,7 +18,6 @@ import {
   Rocket,
   ChevronRight,
 } from "lucide-react";
-import type { MouseEvent } from "react";
 
 const SOCIAL = {
   github: "https://github.com/SatyamKumar-techie",
@@ -26,11 +25,6 @@ const SOCIAL = {
   twitter: "https://x.com/SatyamKr001",
   email: "mailto:satyamdark123@gmail.com",
 };
-
-function openExternal(event: MouseEvent<HTMLAnchorElement>, url: string) {
-  event.preventDefault();
-  window.open(url, "_blank", "noopener,noreferrer");
-}
 
 export const Route = createFileRoute("/")({
   component: Portfolio,
@@ -353,9 +347,7 @@ function Portfolio() {
             </a>
             <a
               href={SOCIAL.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={(event) => openExternal(event, SOCIAL.linkedin)}
+              target="_top"
               className="inline-flex items-center gap-2 rounded-md border border-border bg-background/60 px-5 py-2.5 text-sm font-medium hover:bg-background transition"
             >
               <Linkedin className="h-4 w-4" /> LinkedIn
