@@ -4,11 +4,11 @@ import {
   Mail, Linkedin, Github, Twitter, MapPin, ArrowUpRight,
   Activity, BarChart3, Code2, Rocket, ChevronRight,
 } from "lucide-react";
-import avatar from "@/assets/satyam-avatar.png";
+
 
 const SOCIAL = {
   github: "https://github.com/SatyamKumar-techie",
-  linkedin: "https://www.linkedin.com/in/satyam-kumar-techie",
+  linkedin: "https://www.linkedin.com/in/satyam-kumar-techie/",
   twitter: "https://x.com/SatyamKr001",
   email: "mailto:satyamdark123@gmail.com",
 };
@@ -113,62 +113,41 @@ function Portfolio() {
           className="absolute inset-0 -z-10 opacity-80"
           style={{ backgroundImage: "var(--gradient-hero)" }}
         />
-        <div className="mx-auto max-w-6xl px-6 pt-16 pb-24 md:pt-24 md:pb-32 grid md:grid-cols-[1fr_auto] gap-12 items-center">
-          <div>
-            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-3 py-1 text-xs font-mono text-muted-foreground mb-8">
-              <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
-              Available for DevOps / Cloud / SRE internships
-            </div>
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.05]">
-              Satyam Kumar
-            </h1>
-            <p className="mt-4 text-2xl md:text-3xl font-mono text-primary">
-              Design. Deploy. Scale.
-            </p>
-            <p className="mt-6 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-              DevOps enthusiast focused on building reliable, scalable, and automated
-              systems. I work with cloud platforms, containerized environments and
-              CI/CD pipelines to ship ideas into production-ready deployments.
-            </p>
+        <div className="mx-auto max-w-6xl px-6 pt-20 pb-24 md:pt-28 md:pb-32">
+          <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-3 py-1 text-xs font-mono text-muted-foreground mb-8">
+            <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
+            Available for DevOps / Cloud / SRE internships
+          </div>
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.05]">
+            Satyam Kumar
+          </h1>
+          <p className="mt-4 text-2xl md:text-3xl font-mono text-primary">
+            Design. Deploy. Scale.
+          </p>
+          <p className="mt-6 max-w-2xl text-lg text-muted-foreground leading-relaxed">
+            DevOps enthusiast focused on building reliable, scalable, and automated
+            systems. I work with cloud platforms, containerized environments and
+            CI/CD pipelines to ship ideas into production-ready deployments.
+          </p>
 
-            <div className="mt-10 flex flex-wrap items-center gap-3">
-              <a
-                href="#projects"
-                className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition shadow-[var(--shadow-glow)]"
-              >
-                <Rocket className="h-4 w-4" /> View Projects
-              </a>
-              <a href={SOCIAL.github} target="_blank" rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-md border border-border bg-card/60 px-5 py-2.5 text-sm font-medium hover:bg-card transition">
-                <Github className="h-4 w-4" /> GitHub
-              </a>
-              <a href={SOCIAL.linkedin} target="_blank" rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-md border border-border bg-card/60 px-5 py-2.5 text-sm font-medium hover:bg-card transition">
-                <Linkedin className="h-4 w-4" /> LinkedIn
-              </a>
-              <a href={SOCIAL.twitter} target="_blank" rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-md border border-border bg-card/60 px-5 py-2.5 text-sm font-medium hover:bg-card transition">
-                <Twitter className="h-4 w-4" /> Twitter
-              </a>
-            </div>
-
-            <div className="mt-12 flex flex-wrap items-center gap-6 text-sm text-muted-foreground">
-              <span className="inline-flex items-center gap-2"><MapPin className="h-4 w-4" /><span>India · UTC +05:30</span></span>
-              <span className="inline-flex items-center gap-2"><Mail className="h-4 w-4" /><span>satyamdark123@gmail.com</span></span>
-              <a href={SOCIAL.twitter} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 hover:text-foreground transition"><Twitter className="h-4 w-4" /><span>@SatyamKr001</span></a>
-            </div>
+          <div className="mt-10 flex flex-wrap items-center gap-3">
+            <a
+              href="#projects"
+              className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition shadow-[var(--shadow-glow)]"
+            >
+              <Rocket className="h-4 w-4" /> View Projects
+            </a>
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 rounded-md border border-border bg-card/60 px-5 py-2.5 text-sm font-medium hover:bg-card transition"
+            >
+              <Mail className="h-4 w-4" /> Connect Me
+            </a>
           </div>
 
-          <div className="relative mx-auto md:mx-0 order-first md:order-none">
-            <div className="absolute -inset-4 rounded-full bg-primary/20 blur-2xl" aria-hidden />
-            <div className="relative h-48 w-48 md:h-64 md:w-64 rounded-full p-[3px] bg-gradient-to-br from-primary via-accent to-primary shadow-[var(--shadow-glow)]">
-              <img
-                src={avatar}
-                alt="Portrait of Satyam Kumar"
-                className="h-full w-full rounded-full object-cover bg-card"
-                loading="eager"
-              />
-            </div>
+          <div className="mt-12 flex flex-wrap items-center gap-6 text-sm text-muted-foreground">
+            <span className="inline-flex items-center gap-2"><MapPin className="h-4 w-4" /><span>India · UTC +05:30</span></span>
+            <span className="inline-flex items-center gap-2"><Mail className="h-4 w-4" /><span>satyamdark123@gmail.com</span></span>
           </div>
         </div>
       </section>
@@ -290,14 +269,17 @@ function Portfolio() {
             pipelines, clusters and clean infrastructure.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <a href="mailto:satyamdark123@gmail.com" className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition shadow-[var(--shadow-glow)]">
+            <a href={SOCIAL.email} className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition shadow-[var(--shadow-glow)]">
               <Mail className="h-4 w-4" /> satyamdark123@gmail.com
             </a>
-            <a href="https://linkedin.com/in/satyam-kumar-techie" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-md border border-border bg-background/60 px-5 py-2.5 text-sm font-medium hover:bg-background transition">
+            <a href={SOCIAL.linkedin} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-md border border-border bg-background/60 px-5 py-2.5 text-sm font-medium hover:bg-background transition">
               <Linkedin className="h-4 w-4" /> LinkedIn
             </a>
-            <a href="https://github.com/SatyamKumar-techie" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-md border border-border bg-background/60 px-5 py-2.5 text-sm font-medium hover:bg-background transition">
+            <a href={SOCIAL.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-md border border-border bg-background/60 px-5 py-2.5 text-sm font-medium hover:bg-background transition">
               <Github className="h-4 w-4" /> GitHub
+            </a>
+            <a href={SOCIAL.twitter} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-md border border-border bg-background/60 px-5 py-2.5 text-sm font-medium hover:bg-background transition">
+              <Twitter className="h-4 w-4" /> Twitter
             </a>
           </div>
         </div>
