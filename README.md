@@ -1,11 +1,11 @@
-# 🚀 Satyam Kumar Portfolio
+# 🚀 Satyam Kumar Portfolio.
 
 🌐 **Live Website:**
 https://satyam-portfolio-01.lovable.app
 
 ---
 
-## 👋 About Me
+## 👋 About Me.
 
 Hi, I'm **Satyam Kumar**
 ⚙️ DevOps Enthusiast | ☁️ Cloud & Automation | 💻 DSA Learner
@@ -14,7 +14,7 @@ I am passionate about building scalable infrastructure, automating deployments, 
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack.
 
 * ☁️ Cloud: AWS (Learning)
 * ⚙️ DevOps: Docker, Kubernetes, CI/CD
@@ -24,7 +24,7 @@ I am passionate about building scalable infrastructure, automating deployments, 
 
 ---
 
-## 🔥 DevOps Skills
+## 🔥 DevOps Skills.
 
 * Containerization using Docker
 * Kubernetes basics & orchestration
@@ -34,20 +34,20 @@ I am passionate about building scalable infrastructure, automating deployments, 
 
 ---
 
-## 📂 Projects
+## 📂 Projects.
 
 * 🚀 Portfolio Deployment
 * (Add upcoming DevOps projects like CI/CD pipeline, Dockerized app, etc.)
 
 ---
 
-## 📬 Contact
+## 📬 Contact.
 
 📧 Email: [satyamdark123@gmail.com](mailto:satyamdark123@gmail.com)
 🔗 LinkedIn: https://linkedin.com/in/satyam-kumar-techie
 
 ---
 
-## ⭐ Support
+## ⭐ Support.
 
 If you like my work, give a ⭐ to this repo!
